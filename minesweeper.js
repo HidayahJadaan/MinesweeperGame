@@ -23,7 +23,7 @@ function setMines() {
     // minesLocation.push("3-4");
    
 
-    let minesLeft = minesCount;
+    let minesLeft = minesCount; // to keep track how many mines are left to be placed on the board 
     while (minesLeft > 0) { 
         let r = Math.floor(Math.random() * rows);
         let c = Math.floor(Math.random() * columns);
@@ -31,7 +31,7 @@ function setMines() {
 
         if (!minesLocation.includes(id)) {
             minesLocation.push(id);
-            minesLeft -= 1;
+            minesLeft -= 1; // ones mine has successfully placed
         }
     }//END while Loop
 }// END setMines()
@@ -54,7 +54,7 @@ function startGame() {
             let tile = document.createElement("div"); // create <div id="r-c"></div>
             tile.id = r.toString() + "-" + c.toString(); // Put The ID for each div(tile)
             tile.addEventListener("click", clickTile); // Make the tiles clickble
-            document.getElementById("board").append(tile);
+            document.getElementById("board").append(tile); //effectively adds each tile to the game board, arranging them in a row-wise manner.(visual representation)
             row.push(tile);
         }
         board.push(row); // push them row by row
@@ -236,4 +236,6 @@ function showAlert(message) {
 
 
   }
+  
+
   
