@@ -1,5 +1,8 @@
 # MinesweeperGame-HTML-CSS-JS
 
+# Try It From Here:
+https://hidayahjadaan.github.io/MinesweeperGame/
+
 ![MinesweeperGame .png](https://github.com/HidayahJadaan/MinesweeperGame-HTML-CSS-JS/blob/master/images/Minesweeper.png)
 
 
